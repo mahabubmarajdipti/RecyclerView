@@ -12,25 +12,38 @@
         android:layout_margin="16dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/dataImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:scaleType="fitXY"
             android:src="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/dataTitle"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:text="Title"
             android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dataImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dataDetail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="16dp"
+            android:text="Details"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/dataImage"
+            app:layout_constraintTop_toBottomOf="@+id/dataTitle" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
