@@ -21,5 +21,10 @@ class DataAdapter(private val dataList: ArrayList<Data>): RecyclerView.Adapter<D
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = dataList[position]
 
+        holder.binding.apply {
+            tvName.text = data.name
+            tvEmail.text = data.email
+        }
+
     }
 }
