@@ -29,7 +29,7 @@ class DataAdapter(private val dataList: ArrayList<Data>) :
         val data = dataList[position]
 
         holder.binding.apply {
-            dataTitle.text = data.name
+            dataTitle.text = data.title
             dataDetail.text = data.detail
             dataImage.setImageResource(data.image)
         }

@@ -9,7 +9,7 @@ data class Data(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     @ColumnInfo(name = "data_name")
-    val name: String,
+    val title: String,
     @ColumnInfo(name = "data_detail")
     val detail: String,
     @ColumnInfo(name = "data_image")
